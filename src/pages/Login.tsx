@@ -42,7 +42,7 @@ const Login: React.FC = () => {
           height="100"
           onClick={() => navigate("/welcome")}
         />
-        <h1 className="h3 mb-3 fw-normal">Please login in</h1>
+        <h1 className="h3 mb-3 fw-normal">Please Login In</h1>
 
         <div className="form-floating">
           <input
