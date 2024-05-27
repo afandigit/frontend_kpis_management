@@ -1,0 +1,128 @@
+.main-nav-bar {
+  height: 100%;
+  width: 90%;
+  display: flex;
+  align-items: center;
+  /* justify-content: space-between; */
+  padding-top: 10px;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-bottom: 7px;
+  margin-bottom: 10px;
+  user-select: none;
+  background-color: #f8f9fa;
+}
+
+.main-nav-bar ul li {
+  display: inline-block;
+  padding: 10px 20px;
+  list-style-type: none;
+}
+
+.main-nav-bar ul li a {
+  font-size: medium;
+  font-style: Serif;
+  text-decoration: none;
+  color: #302c42;
+}
+
+.main-nav-bar ul li:hover a {
+  color: rgb(0, 253, 59);
+  transition: 0.3s;
+  font-weight: bold;
+}
+
+a.disable-links {
+  pointer-events: none;
+}
+
+.session-control {
+  /* margin-left: 300px; */
+  display: flex;
+  position: absolute;
+  right: 0;
+}
+
+.session-control button {
+  width: 150px;
+  border: none;
+  border-radius: 30px;
+  background-color: #e1ebee;
+  padding: 12px 30px;
+  margin: 0px 10px;
+  color: #302c42;
+  font-size: medium;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.session-control button:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+/* -------------------------- */
+/* SELECT COMPANY PROJECTS MENU */
+/* -------------------------- */
+
+.select-company-projects-menu {
+  display: flex;
+  /* width: 200px; */
+  height: 35px;
+  z-index: 1;
+}
+
+.select-company-projects-menu .sub-select-container {
+  display: flex;
+  width: 200px;
+  height: 35px;
+  margin: 0 4px;
+}
+
+.select-button-label {
+  display: block;
+  width: 200px;
+  height: 35px;
+  border-radius: 20px;
+  padding: 0 20px;
+  line-height: 30px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.select-company-projects-menu .select-button {
+  display: flex;
+  width: 250px;
+  height: 100%;
+  border-radius: 10px;
+  font-size: 15px;
+  padding: 0 20px;
+  margin-right: 10px;
+  /* font-weight: bold; */
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.select-company-projects-menu .select-button:hover {
+  /* background: #dbe1ff; */
+}
+
+.select-company-projects-menu .options {
+  position: relative;
+  padding: 0;
+  margin: 0;
+  margin-top: 10px;
+  border-radius: 20px;
+}
+
+.select-company-projects-menu .option {
+}
+
+.options .option:hover {
+  /* background-color: #dbe1ff; */
+}
+
+.options .option span {
+}

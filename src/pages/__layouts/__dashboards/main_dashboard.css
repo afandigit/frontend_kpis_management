@@ -1,0 +1,189 @@
+:root{
+    --activeItem : rgb(166, 188, 236)
+}
+
+.main-dashboard{
+height: 100%;width: 100%;
+}
+
+hr{
+    border: 0;
+    clear:both;
+    display:block;
+    width: 100%;               
+    background-color:#000000;
+    height: 3px;
+}
+
+.main-dashboard-grid-without-header{
+    display: grid;
+    grid-template-columns: minmax(100px, 2fr) minmax(100px, 2fr) minmax(100px, 2fr) minmax(100px, 2fr) minmax(100px, 2fr);
+    grid-template-rows: minmax(40px, 50px) minmax(20px, 30px) minmax(100px, 2fr) minmax(100px, 2fr) minmax(100px, 2fr) minmax(20px, 30px) minmax(100px, 2fr) minmax(100px, 2fr) minmax(100px, 2fr);
+    grid-template-areas:
+    'header header header header header'
+    'sub_header_1 sub_header_1 sub_header_1 sub_header_1 sub_header_1'
+    'dashboard_1 dashboard_2 dashboard_3 dashboard_4_linechart dashboard_4_linechart'
+    'dashboard_6 dashboard_7 dashboard_9 dashboard_9 dashboard_9'
+    'dashboard_8 dashboard_10 dashboard_11 dashboard_11 dashboard_11'
+    'sub_header_2 sub_header_2 sub_header_2 sub_header_2 sub_header_2'
+    'dashboard_14 dashboard_15 dashboard_17 dashboard_17 dashboard_17'
+    'dashboard_18 dashboard_18 dashboard_22 dashboard_22 dashboard_22'
+    'dashboard_23 dashboard_24 dashboard_25 dashboard_25 dashboard_25';
+}
+
+.main-dashboard>div{
+    padding: 10px;
+}
+.main-dashboard-header{
+    grid-area:header;
+    background-color:  #01497c;
+}
+.main-dashboard-header p{
+    color: white;
+    font-weight: bold;
+    letter-spacing: .2rem;
+    word-spacing: .2rem;
+    margin: 0px 0px 0px 100px;
+}
+.main-dashboard-sub-header-1, .main-dashboard-sub-header-2{
+    background-color:  #cdd1d3;
+    padding: 0;
+}
+.main-dashboard-sub-header-1{
+    grid-area:sub_header_1;
+}
+.main-dashboard-sub-header-2{
+    grid-area:sub_header_2;
+}
+.main-dashboard-sub-header-1 p, .main-dashboard-sub-header-2 p{
+    padding: 0;
+    letter-spacing: .2rem;
+    word-spacing: .2rem;
+    margin: 0px 0px 0px 150px;
+    position: relative;top: -5px;
+}
+
+.dashboard_1{
+    grid-area:dashboard_1;
+}
+.dashboard_2{
+    grid-area:dashboard_2;
+}
+.dashboard_3{
+    grid-area:dashboard_3;
+}
+.dashboard_4_linechart{
+    grid-area:dashboard_4_linechart;
+    margin: 100px 10px;
+}
+.dashboard_6{
+    grid-area:dashboard_6;
+}
+.dashboard_7{
+    grid-area:dashboard_7;
+}
+.dashboard_8{
+    grid-area:dashboard_8;
+}
+.dashboard_9{
+    grid-area:dashboard_9;
+}
+.dashboard_10{
+    grid-area:dashboard_10;
+}
+.dashboard_11{
+    grid-area:dashboard_11;
+}
+.dashboard_12{
+    grid-area:dashboard_12;
+}
+.dashboard_13{
+    grid-area:dashboard_13;
+}
+.dashboard_14{
+    grid-area:dashboard_14;
+}
+.dashboard_15{
+    grid-area:dashboard_15;
+}
+.dashboard_16{
+    grid-area:dashboard_16;
+    margin: auto;
+}
+.dashboard_17{
+    grid-area:dashboard_17;
+}
+.dashboard_18{
+    grid-area:dashboard_18;
+}
+.dashboard_19{
+    grid-area:dashboard_19;
+}
+.dashboard_20{
+    grid-area:dashboard_20;
+}
+.dashboard_21{
+    grid-area:dashboard_21;
+}
+.dashboard_22{
+    grid-area:dashboard_22;
+}
+.dashboard_23{
+    grid-area:dashboard_23;
+}
+.dashboard_24{
+    grid-area:dashboard_24;
+}
+.dashboard_25{
+    grid-area:dashboard_25;
+}
+.dashboard_26{
+    grid-area:dashboard_26;
+}
+.dashboard_27{
+    grid-area:dashboard_27;
+}
+
+.dashboard_1, .dashboard_2, .dashboard_3, .dashboard_4, .dashboard_5, .dashboard_6, .dashboard_7, .dashboard_8, .dashboard_9, .dashboard_10, .dashboard_11, .dashboard_12, .dashboard_13, .dashboard_14, .dashboard_15, .dashboard_16, .dashboard_17, .dashboard_18, .dashboard_19, .dashboard_20, .dashboard_21, .dashboard_22, .dashboard_23, .dashboard_24, .dashboard_25, .dashboard_26, .dashboard_27{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: auto;
+}
+.dashboard_9  div small, .dashboard_22 div small, .dashboard_25 div small{
+    color:#5465ff
+}
+.dashboard_9  div small:last-child, .dashboard_22 div small:last-child, .dashboard_25 div small:last-child{
+    color:#bfd7ff
+}
+
+.doughnut_header{
+    text-align: center;
+    font-weight: bold;
+}
+
+.doughnut_footer{
+    text-align:center;
+}
+
+.increase-indicator-span{
+    color: green;
+    font-weight:bold;
+}
+
+.decrease-indicator-span{
+    color: red;
+    font-weight:bold;
+}
+
+.kpi-numerical-element{
+    text-align: center;
+}
+
+.kpi-numerical-element span:first-child{
+    font-weight : bold;
+}
+
+.dashboard_3 strong{
+    text-align: center;
+}

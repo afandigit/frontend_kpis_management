@@ -1,0 +1,30 @@
+.container-body{
+    height: 100%;
+    width: 100%;
+    margin: 0;padding: 0;
+    display: grid;
+    grid-template-rows: 70px 1fr 50px;
+    grid-template-columns: minmax(100px, 1fr) 10fr;
+    grid-template-areas: 
+        'header header'
+        /* 'aside main' */
+        'main main'
+        'footer footer'
+    ;
+}
+
+.nav-bar-master{
+    grid-area: header;
+}
+
+.side-bar-master{
+    grid-area: aside;
+}
+
+.body-master{
+    grid-area: main;
+}
+
+.footer-master{
+    grid-area: footer;
+}
